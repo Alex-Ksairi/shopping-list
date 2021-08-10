@@ -1,0 +1,232 @@
+
+.nav{
+    width: 100%;
+    height: 95px;
+    vertical-align: middle;
+    box-shadow: 5px 3px 10px var(--text-color-light);
+    background-color: var(--input-color);
+    position: fixed;
+    top: 0;
+
+    z-index: 10;
+}
+
+.nav .nav-opened-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.nav .nav-opened-container .nav-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid var(--font-color);
+    width: auto;
+    margin-left: 45px;
+    padding: 2px;
+}
+
+.nav .nav-opened-container .nav-logo .own-logo {
+    padding-left: 15px;
+    padding-top: 3px;
+}
+                
+.nav .nav-opened-container .nav-logo .logo-name {
+    font-size: 0.8rem;
+    color: var(--font-color);
+    margin-left: 5px;
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+}                    
+                    
+.nav .nav-opened-container .nav-logo .first-name {
+    color: var(--first-color);
+}
+
+.nav .nav-opened-container .nav-logo .span-last-name {
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 22px;
+    font-weight: 800;
+}
+
+
+.nav .nav-opened-container .navigation {
+    margin-right: 100px;
+    display: block;
+}
+
+
+.nav .nav-opened-container .navigation .links {
+    display: table-cell;
+    position: relative;
+}
+
+
+.nav .nav-opened-container .navigation .links a {
+    color: var(--font-color);
+    padding-left: 40px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+    
+.nav .nav-opened-container .navigation .links a:hover {
+    color: var(--first-color);
+}
+    
+.nav .nav-opened-container .navigation .links a:after {    
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: 12%;
+    width: 0;
+    height: 2px;
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    background: var(--first-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+    
+.nav .nav-opened-container .navigation .links a:hover:after { 
+    width: 100%;
+    left: 16%; 
+}                        
+
+
+.nav .nav-opened-container .nav-close {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--font-color);
+    display: none;
+}
+
+.nav .nav-opened-container .nav-close:hover {
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.nav .nav-opened-container .nav-toggle {
+    font-size: 2rem;
+    color: var(--font-color);
+    display: none;
+}
+
+.nav .nav-opened-container .nav-toggle:hover {
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+
+/* media query */
+/* tablet */
+@media screen and (max-width: 768px) {
+    #radius {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .nav {
+        height: auto;
+    }
+
+    .nav .nav-opened-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav .nav-opened-container #hidden {
+        display: none;
+    }
+
+    .nav .nav-opened-container .nav-logo {
+        margin: 0 0 26px;
+        width: auto;
+    }
+
+    .nav .nav-opened-container .nav-logo .first-name {
+        font-size: .8rem;
+    }
+
+    .nav .nav-opened-container .nav-logo .span-last-name {
+        font-size: 1.2rem;
+    }
+
+    .nav .nav-opened-container .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 30px auto;
+        margin-left: 40%;
+    }
+
+    .nav .nav-opened-container .navigation .links {
+        text-align: center;
+    }
+
+    .nav .nav-opened-container .navigation .links a:hover:after {
+        left: 0%;
+    }
+
+    .nav .nav-opened-container .nav-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+    }
+
+    .nav .nav-opened-container .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 448px) {
+    .nav {
+        max-width: 968px;
+    }
+
+    .nav .nav-opened-container .nav-logo {
+        margin-left: 0;
+        padding-right: 1px;
+    }
+
+    .nav .nav-opened-container .nav-logo .first-name {
+        font-size: .7rem;
+    }
+
+    .nav .nav-opened-container .nav-logo .span-last-name {
+        font-size: 1rem;
+        margin-left: 1px
+    }
+
+    .nav .nav-opened-container .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 35%;
+    }
+
+    .nav .nav-opened-container .navigation .links {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .nav .nav-opened-container .navigation .links a {
+        width: 100%;
+    }
+
+    .nav .nav-opened-container .nav-close {
+        top: 22px;
+        right: 35px;
+    }
+
+    .nav .nav-opened-container .nav-toggle {
+        font-size: 1.5rem;
+        top: 32px;
+        right: 35px;
+    }
+}

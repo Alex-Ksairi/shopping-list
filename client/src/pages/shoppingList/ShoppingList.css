@@ -1,0 +1,84 @@
+.input {
+    margin-top: 30px;
+}
+
+.form .priority {
+    margin-bottom: 30px !important;
+    height: 50px !important;
+    width: 300px !important;
+    font-size: 1rem !important;
+}
+
+
+/* items container */
+
+.items-container {
+    width: 52.1%;
+    margin: -100px auto;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.items-container .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-container .items .item {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 5px;
+}
+
+.items-container .items .item .check {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--first-color);
+    background-color: var(--first-color);
+    color: rgb(5, 63, 31);
+    font-size: 2.3em;
+    border-radius: 50%;
+}
+
+.items-container .items .item .check:hover {
+    background-color: var(--first-color);
+    color: rgb(5, 63, 31);
+}
+
+.items-container .items .item .checked {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--first-color);
+    background-color: transparent;
+    color: var(--text-color-light);
+    font-size: 2.3em;
+    border-radius: 50%;
+}
+
+.items-container .items .item .content {
+    margin-left: 20px;
+    color: var(--input-color);
+    font-size: 1.8em;
+}
+
+.items-container .items .modify-item div {
+    color: var(--title-color);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.items-container .items .modify-item div:hover {
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.items-container .items .modify-item {
+    margin-top: -50px;
+}
+
+.items-container .items .modify-item div:last-child {
+    padding-left: 20px;
+}

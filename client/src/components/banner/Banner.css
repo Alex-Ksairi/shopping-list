@@ -1,0 +1,87 @@
+/* Banner */
+.banner {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--body-color);
+    padding: 6rem 8rem;
+    margin: 250px 24%; 
+    text-align: center;
+    letter-spacing: var(--letter-spacing-btn);
+}
+
+.banner h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.banner div {
+    width: 10rem;
+    height: 5px;
+    margin: 3rem auto;
+    background: var(--first-color);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 5rem 6rem;
+        margin: 200px 10%;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .banner {
+        padding: 2rem 3rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.8rem;
+    }
+}
+
+.banner .form label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--first-color);
+        text-transform: uppercase;
+        margin-left: 10px;
+}
+
+.banner .form input[type=text], input[type=email], input[type=password], .priority {
+        border: none;
+        color: var(--input-color);
+        border-bottom: 2px solid var(--first-color);
+        background-color: transparent;
+        border-radius: 3px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+        outline: none;
+}
+
+.banner .form .btn {
+    display: block;
+    width: 280px;
+}
+
+@media screen and (max-width: 768px) {
+    .banner .form {
+        margin-left: 0;
+    }
+}
+
+/* End of Banner */

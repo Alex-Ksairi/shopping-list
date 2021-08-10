@@ -1,0 +1,6 @@
+/* Hero */
+.defaultHero {
+    background: url('https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566__340.jpg');
+    background-size: cover;
+    background-position: center;
+}
